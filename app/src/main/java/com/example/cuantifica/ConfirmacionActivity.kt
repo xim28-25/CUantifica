@@ -23,7 +23,7 @@ class ConfirmacionActivity : AppCompatActivity() {
         // Botón "Regresar al inicio" (opcional)
         val btnInicio = findViewById<Button>(R.id.btnVolverInicio)
         btnInicio.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, ConexionActivity::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_NEW_TASK
             startActivity(intent)
             finish()
