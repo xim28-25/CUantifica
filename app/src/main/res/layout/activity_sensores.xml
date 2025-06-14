@@ -40,24 +40,13 @@
                     android:src="@drawable/logo_contravolut"
                     android:layout_marginEnd="4dp" />
 
-                <LinearLayout
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="CUantifica"
-                        android:textSize="16sp"
-                        android:textColor="#444444"
-                        android:textStyle="bold" />
-
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="2dp"
-                        android:background="#CCCCCC" />
-                </LinearLayout>
+                    android:text="CUantifica"
+                    android:textSize="16sp"
+                    android:textColor="#444444"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <ImageView
@@ -67,100 +56,100 @@
                 android:src="@drawable/usuario" />
         </RelativeLayout>
 
-        <!-- Subtítulo centrado -->
+        <!-- Subtítulo "Sensores" -->
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Materia"
-            android:textStyle="normal"
+            android:text="Sensores"
             android:textSize="14sp"
             android:textColor="#888888"
-            android:layout_marginBottom="8dp" />
+            android:layout_marginBottom="4dp" />
 
+        <!-- Línea gris debajo -->
         <View
-            android:layout_width="match_parent"
+            android:layout_width="160dp"
             android:layout_height="1dp"
             android:background="#CCCCCC"
             android:layout_marginBottom="16dp" />
 
-        <!-- Tarjetas de materias -->
+        <!-- Buscador corregido con borde -->
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="40dp"
+            android:background="@drawable/spinner_background"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_gravity="center"
+            android:paddingHorizontal="12dp"
+            android:layout_marginBottom="24dp">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:hint="Buscar"
+                android:textColorHint="#888888"
+                android:textSize="14sp"
+                android:inputType="text" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:tint="#444444" />
+        </LinearLayout>
+
+        <!-- Tarjetas de sensores -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center_horizontal">
 
-            <!-- Química -->
+            <!-- Sensor pH -->
             <LinearLayout
-                android:id="@+id/cardQuimica"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@drawable/rounded_background"
+                android:background="@drawable/rounded_white_border"
                 android:padding="16dp"
                 android:layout_marginBottom="16dp">
 
                 <ImageView
-                    android:layout_width="140dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/quimica"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/ph"
                     android:layout_gravity="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Química"
+                    android:text="Sensor de pH"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp" />
             </LinearLayout>
 
-            <!-- Física -->
+            <!-- Sensor de temperatura -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:background="@drawable/rounded_background"
-                android:padding="16dp"
-                android:layout_marginBottom="16dp">
-
-                <ImageView
-                    android:id="@+id/fisica"
-                    android:layout_width="140dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/fisica"
-                    android:layout_gravity="center" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Física"
-                    android:textStyle="bold"
-                    android:textSize="16sp"
-                    android:layout_gravity="center"
-                    android:layout_marginTop="8dp" />
-            </LinearLayout>
-
-            <!-- Biología -->
-            <LinearLayout
-                android:id="@+id/biologia"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:background="@drawable/rounded_background"
+                android:background="@drawable/rounded_white_border"
                 android:padding="16dp">
 
                 <ImageView
-                    android:layout_width="140dp"
-                    android:layout_height="100dp"
-                    android:src="@drawable/biologia"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/temperatura"
                     android:layout_gravity="center" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Biología"
+                    android:text="Sensor de temperatura"
                     android:textStyle="bold"
                     android:textSize="16sp"
                     android:layout_gravity="center"

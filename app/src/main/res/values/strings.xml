@@ -1,5 +1,5 @@
 <resources>
-    <!-- ...otros strings... -->
+    <string name="app_name">CUantifica</string>
 
     <string-array name="unidades">
         <item>pH</item>
