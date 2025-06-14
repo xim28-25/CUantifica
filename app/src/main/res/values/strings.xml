@@ -1,3 +1,15 @@
 <resources>
-    <string name="app_name">CUantifica</string>
+    <!-- ...otros strings... -->
+
+    <string-array name="unidades">
+        <item>pH</item>
+        <item>Voltios</item>
+        <item>Grados Celsius</item>
+    </string-array>
+
+    <string-array name="magnitudes">
+        <item>0–14</item>
+        <item>0–5</item>
+        <item>100–500</item>
+    </string-array>
 </resources>
